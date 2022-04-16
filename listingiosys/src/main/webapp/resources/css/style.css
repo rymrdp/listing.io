@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+/*--- Header -- */
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:black;
+    background: linear-gradient(
+                     rgba(20,20,20, .6),
+                     rgba(20,20,20, .6)),
+                     url(../images/bg-night.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;             
+  font-family: Inter var,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+
+.opt-container {
+  margin:10px 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.opt-1 button{
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  padding: 15px 0;
+  margin: 10px 10px;
+  border-radius:25px;
+  cursor: pointer;
+  background: rgba(20,20,20,0.6);
+  font-weight: bold;
+}
+
+.opt-2 button{
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  padding: 15px 0;
+  margin: 10px 20px;
+  border-radius:25px;
+  cursor: pointer;
+  background: rgba(20,20,20,0.6);
+  font-weight: bold;
+}
+
+.opt-1 button:hover{
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  padding: 15px 0;
+  margin: 10px 10px;
+  border-radius:25px;
+  cursor: pointer;
+  background: rgba(20,20,20,0.9);
+  font-weight: bold;
+}
+
+.opt-2 button:hover{
+  text-decoration: none;
+  color: white;
+  width: 200px;
+  padding: 15px 0;
+  margin: 10px 20px;
+  border-radius:25px;
+  cursor: pointer;
+  background: rgba(20,20,20,0.9);
+  font-weight: bold;
+}
+
+.welcome{
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+}
+
+@media (max-width: 800px) {
+  .opt-1, .opt-2 {
+    flex: 100%;
+  }
+}
+
+.flex {
+  color: white;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.nav{
+  height: 20vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75));
+  color: white;
+  margin: auto;
+  width: 85%;
+  padding: 35px 0;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.nav ul li{
+  list-style: none; 
+  display: inline-block;
+  margin: 0 20px;
+  
+}
+
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav h3{
+  font-size: 30px;
+}
+
+.addformcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addform{
+  margin: 10px;
+  padding: 20px;
+  width: 350px;
+  height: 300px;
+  box-shadow: 0 0 40px 20px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C3446;
+}
+
+table.addformtable td{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+
+input[type="submit"]{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+input[type="submit"]:hover{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.submitbtn{
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100px;
+  padding: 15px 0;
+  margin: 20px 20px;
+  border-radius:25px;
+  cursor: pointer;
+  background: teal;
+  font-weight: bold;
+}
+
+.submitbtn:hover{
+  text-decoration: none !important;
+  text-align: center !important;
+  color: white !important;
+  width: 100px !important;
+  padding: 15px 0 !important;
+  margin: 20px 20px !important;
+  border-radius:25px !important;
+  cursor: pointer !important;
+  background: orange !important;
+  font-weight: bold !important;
+}
+
+.editformcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editform{
+  margin: 10px;
+  padding: 20px;
+  width: 350px;
+  height: 300px;
+  box-shadow: 0 0 40px 20px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2C3446;
+}
+
+table.editformtable td{
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.formlabelcontainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15apx;
+}
+
+.formlabel{
+  display:flex;
+  width:350px;
+  padding: 10px;
+  background-color: #2C3446;
+  justify-content: center;
+  color: white;
+}
+
+/* ------table------ */
+
+table.prodtable { 
+  width: 80%; 
+  border-collapse: collapse; 
+  border-radius:20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: auto;
+  border:none;
+  
+}
+/* Zebra striping */
+table.prodtable tr:nth-of-type(odd) { 
+  background: #323C50; 
+  font-family: Helvetica;
+  color: white;
+}
+
+table.prodtable tr:nth-of-type(even) { 
+  background: #2C3446; 
+  font-family: Helvetica;
+  color: white;
+}
+
+table.prodtable th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+  font-family: Helvetica;
+}
+table.prodtable td, th { 
+  padding: 6px; 
+  text-align: left; 
+  border:none;
+}
+
+.viewprod a{
+	text-decoration:none;
+}
+
+.viewprod h3 {
+  font-size:2em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 1em;
+  color: #FB667A;
+  text-transform: uppercase;
+}
+
+.viewprod h2 {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 1em;
+  color: #FB667A;
+  text-transform: uppercase;
+}
+
+.viewprod h2:hover {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: center;
+  display: block;
+  line-height:1em;
+  padding-bottom: 1em;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+table.prodtable a {
+  font-size:1em; 
+  font-weight: 300;
+  text-align: left;
+  display: block;
+  line-height:.8em;
+  padding: .8em;
+  color: #FFF842;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+table, tr, td {
+    border: none;
+}
